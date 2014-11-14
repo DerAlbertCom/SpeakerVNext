@@ -6,3 +6,4 @@ src/ThereIsAThing/wwwroot/**/*.map
 artifacts
 *.log
 *.ide
+*.suo
