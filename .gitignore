@@ -7,3 +7,4 @@ artifacts
 *.log
 *.ide
 *.suo
+*.sublime-workspace
