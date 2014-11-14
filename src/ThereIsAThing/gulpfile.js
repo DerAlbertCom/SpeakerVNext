@@ -150,8 +150,8 @@ gulp.task('watch-less', function () {
 gulp.task('reload-less', function () {
     return gulp.src(lessPath)
         .pipe(less())
-        .pipe(changed(appPath + 'content/'))
-        .pipe(gulp.dest(appPath + 'content/'))
+        .pipe(changed(site + 'css/'))
+        .pipe(gulp.dest(site + 'css/'))
         .pipe(browserSync.reload({stream: true}));
 });
 
