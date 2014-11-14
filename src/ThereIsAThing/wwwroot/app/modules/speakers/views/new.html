@@ -1,0 +1,38 @@
+﻿<md-dialog aria-label="Suspect app" md-theme="amber" >
+    <form name="newForm" ng-submit="ctrl.create(newForm.$valid, data)">
+        <md-content>
+            <h2>Sprecher anlegen</h2>
+
+            <div class="row">
+                <div class="validation" visible="{{newForm.salutation.$invalid}}" ng-if="newForm.$submitted"
+                     ng-messages="newForm.salutation.$error"
+                     ng-messages-include="/app/views/error-messages.html"></div>
+                <md-text-float label="Anrede" name="salutation" ng-model="ctrl.speaker.salutation" required
+                               maxlength="5">
+                </md-text-float>
+            </div>
+            <div class="row" >
+                <div class="validation" ng-if="newForm.$submitted" ng-messages="newForm.firstName.$error"
+                     ng-messages-include="/app/views/error-messages.html"></div>
+                <md-text-float label="Vorname" name="firstName" ng-model="ctrl.speaker.firstName" required
+                               maxlength="64">
+                </md-text-float>
+                <div class="validation" ng-if="newForm.$submitted" ng-messages="newForm.lastName.$error"
+                     ng-messages-include="/app/views/error-messages.html"></div>
+                <md-text-float label="Nachname" name="lastName" ng-model="ctrl.speaker.lastName" required
+                               maxlength="64"></md-text-float>
+            </div>
+            <div class="row">
+                <div class="validation" ng-if="newForm.$submitted" ng-messages="newForm.eMail.$error"
+                     ng-messages-include="/app/views/error-messages.html"></div>
+                <md-text-float label="E-Mail" name="eMail" ng-model="ctrl.speaker.eMail" class="long" type="email"
+                               required maxlength="255"></md-text-float>
+            </div>
+        </md-content>
+        <div class="md-actions" layout="horizontal" layout-align="end">
+            <md-button class="md-raised md-primary" type="submit">Anlegen</md-button>
+            <md-button class="md-raised" ng-click="ctrl.cancel()" type="button">Abbrechen</md-button>
+        </div>
+    </form>
+
+</md-dialog>

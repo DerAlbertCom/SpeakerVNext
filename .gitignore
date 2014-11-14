@@ -1,0 +1,8 @@
+bower_components
+node_modules
+src/ThereIsAThing/wwwroot/app/**/*.js
+src/ThereIsAThing/wwwroot/css/**/*.css
+src/ThereIsAThing/wwwroot/**/*.map
+artifacts
+*.log
+*.ide

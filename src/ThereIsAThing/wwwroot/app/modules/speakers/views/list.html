@@ -1,0 +1,22 @@
+﻿<div layout="vertical" flex layout-fill>
+    <div layout="horizontal">
+        <md-button ng-click="ctrl.addSpeaker($event)" class="md-raised"><i class="fa fa-plus-circle fa-fw"></i>Neu</md-button>
+    </div>
+    <section>
+        <md-subheader>{{ctrl.hallo}}</md-subheader>
+
+        <md-content class="md-padding">
+            <table>
+                <thead>
+                <tr>Name</tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="speaker in ctrl.speakers | orderBy:'firstName'">
+                    <td>{{speaker.lastName}}, {{speaker.firstName}}</td>
+                    <td><a ui-sref="speakers.detail({speakerId: speaker.id})">Talks</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </md-content>
+    </section>
+</div>

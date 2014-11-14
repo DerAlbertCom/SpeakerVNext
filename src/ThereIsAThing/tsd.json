@@ -1,0 +1,33 @@
+{
+    "version": "v4",
+    "repo": "borisyankov/DefinitelyTyped",
+    "ref": "master",
+    "path": "wwwroot/tsd/typings",
+    "bundle": "wwwroot/tsd/typings/typings.d.ts",
+    "installed": {
+        "angularjs/angular.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "angularjs/angular-animate.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "angularjs/angular-mocks.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "angularjs/angular-resource.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "angular-ui/angular-ui-router.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "jasmine/jasmine.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "jquery/jquery.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        },
+        "lodash/lodash.d.ts": {
+            "commit": "a6b1e4ff841e617e3d449189f82562143d98400d"
+        }
+    }
+}
