@@ -7,4 +7,6 @@ artifacts
 *.log
 *.ide
 *.suo
+*.user
 *.sublime-workspace
+.DS_STORE
